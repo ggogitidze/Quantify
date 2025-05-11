@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/shared.js"></script>
+  <script defer src="js/profile.js"></script>
+</head>
+<body>
+  <div class="page-container">
+    <div id="navbar-placeholder"></div>
+
+    <div class="main-wrapper">
+      <div class="main-content">
+        <h2>User Profile</h2>
+
+        <div class="profile-card">
+          <div class="profile-left">
+            <img src="assets/avatar.png" alt="User" class="profile-avatar" />
+          </div>
+        
+          <div class="profile-right">
+            <p><strong>Total Portfolio Value:</strong> $<span id="portfolio-value">0</span></p>
+            <p><strong>Number of Entries:</strong> <span id="entry-count">0</span></p>
+            <p><strong>Average Buy Price:</strong> $<span id="avg-buy-price">0</span></p>
+            <p><strong>Most Profitable Ticker:</strong> <span id="best-stock">N/A</span></p>
+            <p><strong>Worst Performing Ticker:</strong> <span id="worst-stock">N/A</span></p>
+            <h3>Top Holdings</h3>
+            <ul id="top-holdings"></ul>
+          </div>
+        </div>
+      
+      </div>
+
+      <footer>
+        <p>© 2025 Giorgi Gogitidze. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

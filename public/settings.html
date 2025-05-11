@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/shared.js"></script>
+  <script defer src="js/settings.js"></script>
+</head>
+<body>
+  <div class="page-container">
+    <div id="navbar-placeholder"></div>
+
+    <div class="main-wrapper">
+      <div class="main-content">
+        <div class="container">
+          <h2>User Settings</h2>
+
+          
+
+          <hr />
+
+          <h3>Change Password</h3>
+          <form id="passwordForm">
+            <input type="password" id="currentPassword" placeholder="Current Password" required />
+            <input type="password" id="newPassword" placeholder="New Password" required />
+            <p id="settings-error" style="color: red;"></p>
+            <p id="register-strength" style="margin-top: 5px;"></p>
+            <button type="submit">Update Password</button>
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2025 Giorgi Gogitidze. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

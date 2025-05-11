@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register</title>
+  <link rel="stylesheet" href="css/auth.css" />
+  <script defer src="js/script.js"></script>
+  <script defer src="js/shared.js"></script>
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-left">
+      <h3>Start your journey</h3>
+      <h2>Sign up to Quantify</h2>
+
+      <form id="registerForm" class="auth-form">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="register-feedback"></p>
+      <p id="register-error"></p>
+
+      <p class="auth-link">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <div class="auth-right"></div>
+  </div>
+</body>
+</html>

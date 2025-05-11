@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="../js/script.js"></script>
+  <script src="js/shared.js" defer></script>
+</head>
+<body>
+  <div class="page-container">
+    <div id="navbar-placeholder"></div>
+    <div class="main-wrapper">
+      <div class="main-content">
+        <h2>My Portfolio</h2>
+
+        <form id="portfolioForm">
+          <input type="text" id="ticker" placeholder="Ticker (e.g., AAPL)" required />
+          <input type="number" id="shares" placeholder="Shares" required />
+          <input type="number" id="buyPrice" placeholder="Buy Price ($)" required step="0.01" />
+          <button type="submit">Add Entry</button>
+          <p id="portfolio-error" style="color: red;"></p>
+        </form>
+
+        <h3>Portfolio Table</h3>
+        <table id="portfolioTable" border="1">
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Shares</th>
+              <th>Buy Price</th>
+              <th>Live Price</th>
+              <th>PnL ($)</th>
+              <th>PnL (%)</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <canvas id="performanceChart" width="400" height="200"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script defer src="js/chart.js"></script>
+
+      </div>
+
+      <footer>
+        <p>© 2025 Giorgi Gogitidze. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
